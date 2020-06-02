@@ -55,5 +55,6 @@ func main() {
 		panic(err)
 	}
 
+	log.Println("重定向输出")
 	stdcopy.StdCopy(os.Stdout, os.Stderr, out)
 }
