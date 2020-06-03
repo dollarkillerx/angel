@@ -29,6 +29,7 @@ func main() {
 	container, err := client.ContainerCreate(ctx, &container.Config{
 		Image: "alpine",
 		Cmd: []string{"sh"},
+		Tty: true,  // try = true and cmd sh 可以让 alpine容器保持 运行
 	}, nil, nil, "thisIsTest") // hostConfig,networkingConfig,containerName
 	if err != nil {
 		log.Fatalln("container create error: ",err)
