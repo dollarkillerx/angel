@@ -77,4 +77,5 @@ func main() {
 	// 轻量级的跨网络通信可以采用  overlay (非加密效率损失48%加密效率损失99%)   在同一台机器还是可以承受的
 	// 在 生产环境 使用跨机 网络 推荐使用 Calico overlay 插件 效率87%
 	//cli.NetworkCreate(ctx,"cpx",types.NetworkCreate{Driver: "Calico overlay"})
+	//查考文献 https://www.percona.com/blog/2016/08/03/testing-docker-multi-host-network-performance/
 }
